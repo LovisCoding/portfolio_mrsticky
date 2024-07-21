@@ -1,0 +1,13 @@
+
+.footer {
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    font-family: Inter, sans-serif;
+   //
+}
+.socials svg:hover{
+    fill: #6b859d;
+    transition: transform 0.1s linear;
+}
