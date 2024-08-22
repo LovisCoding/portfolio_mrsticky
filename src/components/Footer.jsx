@@ -1,10 +1,11 @@
-import {Stack, Typography} from "@mui/material";
+import {Divider, Stack, Typography} from "@mui/material";
 import "../assets/css/components/Footer.css";
 import { FaInstagram, FaTiktok, FaYoutube} from "react-icons/fa";
 import {AiFillInstagram} from "react-icons/ai";
 export default function Footer() {
 	return (
 		<div className={"footer"}>
+			<Divider/>
 			<Stack spacing={1}>
 				<Typography variant={"h6"}>Portfolio de Mr.Sticky</Typography>
 				<Stack direction={"row"} spacing={3} sx={{color: "grey"}} justifyContent={"center"} className={'socials'}>

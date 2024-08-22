@@ -13,6 +13,8 @@ export default function DisplayData({data}) {
 					subtitle={item.subtitle}
 					img={item.img}
 					imgDirection={index % 2 === 0 ? 'right' : 'left'}
+					link={item.link}
+
 				/>
 			)
 		})

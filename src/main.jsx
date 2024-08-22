@@ -7,11 +7,16 @@ import {
 } from "react-router-dom";
 import './index.css'
 import Home from "./components/Home/Home.jsx";
+import Creations from "./components/Creations/Creations.jsx";
 
 const router = createBrowserRouter( [
     {
         path: "/",
         element: <Home />,
+    },
+    {
+        path: "/creations",
+        element: <Creations/>
     }
     ]
 )
