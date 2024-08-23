@@ -1,5 +1,5 @@
-import NavBar from "../NavBar.jsx";
-import Footer from "../Footer.jsx";
+import NavBar from "../Misc/NavBar.jsx";
+import Footer from "../Misc/Footer.jsx";
 import {Stack} from "@mui/material";
 import Miniatures from "./Miniatures.jsx";
 import Chibis from "./Chibis.jsx";

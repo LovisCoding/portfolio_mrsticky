@@ -1,7 +1,7 @@
-import NavBar from "../NavBar.jsx";
-import Footer from "../Footer.jsx";
+import NavBar from "../Misc/NavBar.jsx";
+import Footer from "../Misc/Footer.jsx";
 import "../../assets/css/components/Home.css"
-import {Button, Stack, Typography} from "@mui/material";
+import { Stack} from "@mui/material";
 import MiddleContent from "./MiddleContent.jsx";
 import DisplayData from "./DisplayData.jsx";
 import {homeData} from "../../assets/HomeData/data.jsx";

@@ -16,7 +16,7 @@ export const homeData = [
     link:'/creations#chibis'
   },
   {
-    title: "Bannieres",
+    title: "Bannières",
     subtitle: "Composant essentiel d'une chaîne YouTube",
     img: img3,
     link:'/creations#bannieres'

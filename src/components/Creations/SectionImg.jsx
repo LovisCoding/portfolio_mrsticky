@@ -1,18 +1,20 @@
-import {Grid, Stack, Typography} from "@mui/material";
+import {Grid, Stack, Typography, useMediaQuery} from "@mui/material";
 import Zoom from "react-medium-image-zoom";
 import PropTypes from "prop-types";
+import {useTheme} from "@mui/material/styles";
+import DisplayImage from "../Misc/DisplayImage.jsx";
 
 export default function SectionImg({title,imgs, id}) {
+	const theme = useTheme();
+	const smDown =  useMediaQuery(theme.breakpoints.down('sm'))
 	return (
 		<Stack alignItems={'center'} display={'flex'} id={id} spacing={3} pt={4}>
-			<Typography variant={'h2'}>{title}</Typography>
-			<Grid container rowSpacing={5} columns={{ xs: 4, sm: 8, md: 12 }} columnSpacing={2} maxWidth={'100%'}  >
+			{title ? (
+				<Typography variant={'h2'} sx={{textAlign: 'center'}}>{title}</Typography>
+			): ''}
+			<Grid container rowSpacing={5} columns={{ xs: 4, sm: 8, md: 12 }} columnSpacing={smDown ? 0 : 2} maxWidth={'100%'}  >
 				{Object.keys(imgs).map((key, index) => (
-					<Grid item key={index} xs={4} sm={4} md={4} display={'flex'} justifyContent={'center'}>
-						<Zoom key={index}>
-							<img  src={imgs[key]} alt={key} key={index} width={500} style={{maxWidth:'100%', maxHeight:'100%', borderRadius:'10px'}}/>
-						</Zoom>
-					</Grid>
+					<DisplayImage img={imgs[key]} key={index}/>
 				))}
 			</Grid>
 		</Stack>

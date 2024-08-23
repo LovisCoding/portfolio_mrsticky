@@ -1,5 +1,5 @@
 import {Divider, Stack, Typography} from "@mui/material";
-import "../assets/css/components/Footer.css";
+import "../../assets/css/components/Footer.css";
 import { FaInstagram, FaTiktok, FaYoutube} from "react-icons/fa";
 import {AiFillInstagram} from "react-icons/ai";
 export default function Footer() {

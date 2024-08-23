@@ -8,6 +8,7 @@ import {
 import './index.css'
 import Home from "./components/Home/Home.jsx";
 import Creations from "./components/Creations/Creations.jsx";
+import Clients from "./components/Clients/Clients.jsx";
 
 const router = createBrowserRouter( [
     {
@@ -17,6 +18,10 @@ const router = createBrowserRouter( [
     {
         path: "/creations",
         element: <Creations/>
+    },
+    {
+        path: "/clients",
+        element: <Clients/>
     }
     ]
 )

@@ -2,7 +2,7 @@ import {Box, Button, Grid, Stack, useMediaQuery} from "@mui/material";
 import PropTypes from "prop-types";
 import { useTheme } from '@mui/material/styles';
 import {useNavigate} from "react-router-dom";
-
+import Zoom from "react-medium-image-zoom";
 export default function PictureData({title, subtitle, imgDirection, img, link}) {
 	const navigate = useNavigate()
 	const theme = useTheme();
@@ -16,17 +16,21 @@ export default function PictureData({title, subtitle, imgDirection, img, link}) 
 	}
 	const picture = (
 		<Grid item xs={4} sm={4} md={6} key={'_picture'} sx={sxGrid}>
-			<Box
-				component="img"
-				sx={{
-					width: '100%',
-					height: 'auto',
-					borderRadius: '10px'
-				}}
-				alt={title+"_image"}
-				src={img}
+			<Zoom>
+				<Box
+					component="img"
+					sx={{
+						width: '100%',
+						maxWidth: '800px',
+						height: 'auto',
+						borderRadius: '10px'
+					}}
+					alt={title+"_image"}
+					src={img}
 
-			/>
+				/>
+			</Zoom>
+
 		</Grid>
 	)
 	const text = (
