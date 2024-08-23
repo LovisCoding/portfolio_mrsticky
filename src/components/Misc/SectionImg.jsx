@@ -2,7 +2,7 @@ import {Grid, Stack, Typography, useMediaQuery} from "@mui/material";
 import Zoom from "react-medium-image-zoom";
 import PropTypes from "prop-types";
 import {useTheme} from "@mui/material/styles";
-import DisplayImage from "../Misc/DisplayImage.jsx";
+import DisplayImage from "./DisplayImage.jsx";
 
 export default function SectionImg({title,imgs, id}) {
 	const theme = useTheme();

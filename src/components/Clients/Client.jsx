@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import {Divider, Stack, Typography} from "@mui/material";
-import SectionImg from "../Creations/SectionImg.jsx";
+import SectionImg from "../Misc/SectionImg.jsx";
 
 export default function Client({title, subtitle, folder}) {
 	const imgs =  import.meta.glob('/public/Clients/*/*.{png,jpg,jpeg,svg}', {eager: true,import: 'default'}	);
@@ -9,8 +9,9 @@ export default function Client({title, subtitle, folder}) {
 	let pp
 	Object.keys(imgs).forEach((img) => {
 		if (img.includes(folder)) {
-			if (img.includes('pp')) pp = img
-			else res.push(img)
+			const cleaned = img.replace('/public', '')
+			if (img.includes('pp')) pp = cleaned
+			else res.push(cleaned)
 		}
 	})
 	return (
