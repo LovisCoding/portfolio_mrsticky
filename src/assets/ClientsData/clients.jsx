@@ -1,7 +1,7 @@
 /**
  * Créer un objet pour chaque client
  * Créer un dossier pour chaque client dans public/Clients
- * La photo de profil doit être pp.png dans le nom du dossier du client
+ * La photo de profil doit être pp dans le nom du dossier du client
  * /!\ ne pas oublier les , à la fin de chaque accolade
  * {
  *     title: "Nom du client",
@@ -19,5 +19,10 @@ export const clientsData = [
 		title: "Lovis",
 		subtitle: "10K abonnés",
 		folder: "Lovis",
-	}
+	},
+	{
+     title: "Squeezie",
+     subtitle: "15M",
+      folder:  "Squeezie"
+ }
 ]
