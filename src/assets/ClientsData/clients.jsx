@@ -24,5 +24,9 @@ export const clientsData = [
      title: "Squeezie",
      subtitle: "15M",
       folder:  "Squeezie"
- }
-]
+ },
+{
+      title: "JEAN",
+      subtitle: "1 k",
+      folder:  "JEAN"
+  },]
