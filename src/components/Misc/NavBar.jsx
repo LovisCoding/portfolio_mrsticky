@@ -1,9 +1,10 @@
 
 import {useLocation, useNavigate} from "react-router-dom";
 import logo from "../../assets/img/logo.png";
+import "../../assets/css/components/NavBar.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-import "../../assets/css/components/NavBar.css";
+
 import {Button} from "@mui/material";
 import {useEffect, useState} from "react";
 import Contact from "./Contact.jsx";
@@ -55,7 +56,7 @@ export default function NavBar() {
 							<a className="nav-link a-text-nav" id="nav-chibis" onClick={handleLi} href={"#"} >Chibis</a>
 						</li>
 						<li className="nav-item me-3">
-							<a className="nav-link a-text-nav" id="nav-bannieres" onClick={handleLi} href={"#"}>Bannières</a>
+							<a className="nav-link a-text-nav" id="nav-bannieres" onClick={handleLi} href={"#"}>Bannieres</a>
 						</li>
 						<li className="nav-item me-3">
 							<a className="nav-link a-text-nav" id="nav-pp" href={"#"}	onClick={handleLi}>Photos de Profil</a>

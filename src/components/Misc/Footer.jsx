@@ -7,7 +7,7 @@ export default function Footer() {
 		<div className={"footer"}>
 			<Divider/>
 			<Stack spacing={1}>
-				<Typography variant={"h6"}>Portfolio de Mr.Sticky</Typography>
+				<Typography variant={"h6"} sx={{color : 'grey'}}>Portfolio de Mr.Sticky</Typography>
 				<Stack direction={"row"} spacing={3} sx={{color: "grey"}} justifyContent={"center"} className={'socials'}>
 					<a href={"https://www.youtube.com/channel/UC42VhwzWy2eQNk7QQokLYGQ"} target={"_blank"} style={{color: "inherit"}}>
 						<FaYoutube style={{fontSize: "20px"}}/>

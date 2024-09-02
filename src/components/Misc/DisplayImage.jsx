@@ -10,7 +10,7 @@ export default function DisplayImage({img, index, id}) {
 		md = 3
 	}
 	return (
-		<Grid item key={index} xs={4} sm={4} md={md} display={'flex'} justifyContent={'center'} display={'flex'} flexDirection={'column'} sx={{
+		<Grid item key={index} xs={4} sm={4} md={md} display={'flex'} justifyContent={'center'}  flexDirection={'column'} sx={{
 			'& [data-rmiz]' : {
 				height: '100%',
 			},

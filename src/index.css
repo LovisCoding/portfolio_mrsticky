@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Lemon Days';
+    src: url('/public/font/Lemon_Days.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+h1, h2,h3,h4,h5,h6,p, span,a, button {
+
+    font-family: 'Lemon Days', sans-serif !important;
+
+}

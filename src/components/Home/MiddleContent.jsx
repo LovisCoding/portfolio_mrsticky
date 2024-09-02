@@ -11,7 +11,7 @@ export default function MiddleContent() {
 				strings={[
 					"Besoin d'une Miniature ?",
 					"Besoin d'un Chibi ?",
-					"Besoin d'une Bannière ?",
+					"Besoin d'une Banniere ?",
 					"Besoin d'une Photo de Profil ?",
 				]}
 				typeSpeed={60}

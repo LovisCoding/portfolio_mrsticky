@@ -39,7 +39,7 @@ export default function PictureData({title, subtitle, imgDirection, img, link}) 
 				<h1 style={{fontWeight:'700'}}>{title}</h1>
 				<h5 style={{color: 'grey'}}>{subtitle}</h5>
 				<Button variant={'contained'} sx={{backgroundColor: 'black', alignSelf: 'baseline'}} onClick={() => navigate(link)}>
-					Accéder
+					Acceder
 				</Button>
 			</Stack>
 		</Grid>

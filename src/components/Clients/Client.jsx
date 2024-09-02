@@ -18,8 +18,8 @@ export default function Client({title, subtitle, folder}) {
 		<Stack spacing={3} display={'flex'} alignItems={'center'} paddingY={5}>
 			<img src={pp} alt={title} style={{maxWidth: '200px', height: 'auto', borderRadius: '50%', border: '4px solid black'}}/>
 			<Stack>
-				<Typography variant={'h4'} sx={{textAlign:'center'}}>{title}</Typography>
-				<Typography variant={'h6'} sx={{textAlign:'center'}}>{subtitle}</Typography>
+				<Typography variant={'h4'} sx={{textAlign:'center', fontFamily: 'Lemon Days'}}>{title}</Typography>
+				<Typography variant={'h6'} sx={{textAlign:'center', fontFamily: 'Lemon Days'}}>{subtitle}</Typography>
 			</Stack>
 			<Divider/>
 			<SectionImg imgs={res} id={folder}/>
