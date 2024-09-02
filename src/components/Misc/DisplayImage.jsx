@@ -2,7 +2,7 @@ import Zoom from "react-medium-image-zoom";
 import {Grid} from "@mui/material";
 import PropTypes from "prop-types";
 
-export default function DisplayImage({img, key, id}) {
+export default function DisplayImage({img, index, id}) {
 
 	let md = 4
 
@@ -10,7 +10,7 @@ export default function DisplayImage({img, key, id}) {
 		md = 3
 	}
 	return (
-		<Grid item key={key} xs={4} sm={4} md={md} display={'flex'} justifyContent={'center'} display={'flex'} flexDirection={'column'} sx={{
+		<Grid item key={index} xs={4} sm={4} md={md} display={'flex'} justifyContent={'center'} display={'flex'} flexDirection={'column'} sx={{
 			'& [data-rmiz]' : {
 				height: '100%',
 			},
@@ -18,14 +18,14 @@ export default function DisplayImage({img, key, id}) {
 				height: '100%',
 			}
 		}}>
-			<Zoom key={key} >
-				<img src={img}  key={key} width={500} style={{width:'100%', height:'100%', borderRadius:'10px',objectFit: 'cover'}}/>
+			<Zoom key={index} >
+				<img src={img}  key={index} width={500} style={{width:'100%', height:'100%', borderRadius:'10px',objectFit: 'cover'}}/>
 			</Zoom>
 		</Grid>
 	)
 }
 DisplayImage.propTypes = {
 	img: PropTypes.string.isRequired,
-	key: PropTypes.number.isRequired,
-	nbParLigne: PropTypes.number.isRequired,
+	index: PropTypes.number.isRequired,
+	nbParLigne: PropTypes.number,
 }

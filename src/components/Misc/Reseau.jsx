@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 export default function Reseau ({img, link, text}) {
 	return (
 		<Stack direction={'column'} display={'flex'} alignItems={'center'}>
-			<Link href={link} target={"_blank"}>
+			<Link href={link ?? '#'} target={link ? "_blank" : ''}>
 				{img}
 			</Link>
 			<Typography variant={'p'}>{text}</Typography>
@@ -14,6 +14,6 @@ export default function Reseau ({img, link, text}) {
 }
 Reseau.propTypes = {
 	img: PropTypes.node.isRequired,
-	link: PropTypes.string.isRequired,
+	link: PropTypes.string,
 	text: PropTypes.string.isRequired
 }
