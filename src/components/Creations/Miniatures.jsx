@@ -5,6 +5,6 @@ import SectionImg from "../Misc/SectionImg.jsx";
 export default function Miniatures() {
 	const imgs =  import.meta.glob('/public/Miniatures/*.{png,jpg,jpeg,svg,webp}', {eager: true,import: 'default'}	);
 	return (
-			<SectionImg title={'Miniatures'} imgs={imgs} id={'miniatures'}/>
+			<SectionImg title={'Miniatures'} imgs={imgs} id={'miniatures'} />
 	)
 }
