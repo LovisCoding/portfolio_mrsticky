@@ -9,7 +9,7 @@ export default function Clients() {
 		<>
 			<NavBar/>
 			<Stack spacing={4} paddingY={6}>
-				<Typography variant={'h2'} sx={{textAlign: 'center', fontFamily: 'Lemon Days'}}>Mes Clients</Typography>
+				<Typography variant={'h2'} sx={{textAlign: 'center', fontFamily: 'Lemon Days', color: 'white'}}>Mes Clients</Typography>
 				<Divider/>
 				<Stack spacing={2}>
 					{clientsData.map((item, index) => {

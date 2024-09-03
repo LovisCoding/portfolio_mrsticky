@@ -6,9 +6,7 @@
     text-align: center;
     margin-top: 10%;
 }
-/*
-body {
-    background-image: url("/public/bg.webp");
-    background-size: cover;
+
+.typed-cursor {
+    color: white;
 }
- */

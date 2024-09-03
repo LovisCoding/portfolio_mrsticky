@@ -12,12 +12,12 @@
 export const clientsData = [
 	{
 		title: "MrSticky",
-		subtitle: "100K abonnés",
+		subtitle: "100K abonnes",
 		folder: "MrSticky",
 	},
 	{
 		title: "Lovis",
-		subtitle: "10K abonnés",
+		subtitle: "10K abonnes",
 		folder: "Lovis",
 	},
 	{

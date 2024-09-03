@@ -36,9 +36,9 @@ export default function PictureData({title, subtitle, imgDirection, img, link}) 
 	const text = (
 		<Grid item xs={4} sm={4} md={6} key={'_text'} sx={sxGrid} >
 			<Stack spacing={2} sx={{height: '100%'}}>
-				<h1 style={{fontWeight:'700'}}>{title}</h1>
+				<h1 style={{fontWeight:'700', color: 'white'}}>{title}</h1>
 				<h5 style={{color: 'grey'}}>{subtitle}</h5>
-				<Button variant={'contained'} sx={{backgroundColor: 'black', alignSelf: 'baseline'}} onClick={() => navigate(link)}>
+				<Button variant={'contained'} sx={{backgroundColor: 'white', alignSelf: 'baseline', color: 'black', '&:hover': {background: '#31bcb8'}}} onClick={() => navigate(link)}>
 					Acceder
 				</Button>
 			</Stack>

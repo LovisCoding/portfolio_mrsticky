@@ -12,7 +12,7 @@ export default function SectionImg({title,imgs, id, key}) {
 	return (
 		<Stack alignItems={'center'} display={'flex'} id={id} spacing={3} pt={4} >
 			{title ? (
-				<Typography variant={'h2'} sx={{textAlign: 'center'}}>{title}</Typography>
+				<Typography variant={'h2'} sx={{textAlign: 'center', color: 'white'}}>{title}</Typography>
 			): ''}
 			<Grid container rowSpacing={5} columns={{ xs: 4, sm: 8, md: md }} columnSpacing={smDown ? 0 : 2} maxWidth={'100%'} display={'flex'} justifyContent={'center'} >
 				{Object.keys(imgs).map((img, index) => (
@@ -23,8 +23,8 @@ export default function SectionImg({title,imgs, id, key}) {
 	)
 }
 SectionImg.propTypes = {
-	title: PropTypes.string.isRequired,
-	imgs: PropTypes.object.isRequired,
+	title: PropTypes.string,
+	imgs: PropTypes.array.isRequired,
 	id: PropTypes.string.isRequired,
 	nbParLigne: PropTypes.number,
 }

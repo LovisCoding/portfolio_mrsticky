@@ -17,12 +17,16 @@ export default function MiddleContent() {
 				typeSpeed={60}
 				backSpeed={40}
 				className={'text-slider'}
+				style={{color: 'white'}}
 				loop
 			/>
 
 			<Typography sx={{color: "grey"}} variant={"h6"}>Ils m'ont fait confiance</Typography>
 
-			<Button variant={'contained'} sx={{backgroundColor: 'black'}} onClick={()=> navigate('/clients')}>
+			<Button variant={'contained'} sx={{backgroundColor: 'white', color: 'black', "&:hover" : {
+					background: '#31bcb8',
+				}
+				}} onClick={()=> navigate('/clients')}>
 				Mes Clients
 			</Button>
 		</Stack>

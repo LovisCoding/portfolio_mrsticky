@@ -1,11 +1,14 @@
 @font-face {
     font-family: 'Lemon Days';
-    src: url('/public/font/Lemon_Days.ttf') format('truetype');
+    src: url('/font/Lemon_Days.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 h1, h2,h3,h4,h5,h6,p, span,a, button {
-
+    color : red;
     font-family: 'Lemon Days', sans-serif !important;
 
+}
+body {
+    background: url("/bg.webp") no-repeat center fixed;
 }

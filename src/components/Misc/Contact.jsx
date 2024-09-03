@@ -8,10 +8,14 @@ export default function Contact({open, setOpen}) {
 		<Dialog
 			open={open}
 			onClose={() => setOpen(false)}
+			fullWidth={true}
+			maxWidth={'md'}
+			display={'flex'}
+			justifyContent={'center'}
 		>
 			<DialogTitle textAlign={'center'}>Contactez-moi</DialogTitle>
 			<DialogContent>
-				<Stack spacing={3} direction={{ xs: 'column', sm: 'row' }}>
+				<Stack spacing={3} direction={{ xs: 'column', sm: 'row' }} display={'flex'} justifyContent={'space-around'}>
 					<Reseau img={<AiFillInstagram style={{fontSize: "40px", color:'black'}}/>} link={"https://www.instagram.com/mister.__.sticky/"} text={"@mister.__.sticky"}/>
 					<Reseau img={<AiFillTikTok style={{fontSize: "40px", color: 'black'}}/>} link={"https://www.tiktok.com/@mister._.sticky_officiel"} text={"@mister._.sticky_officiel"}/>
 					<Reseau img={<AiFillYoutube style={{fontSize: "40px", color:'black'}}/>} link={"https://www.youtube.com/channel/UC42VhwzWy2eQNk7QQokLYGQ"} text={"@Mr.Sticky"}/>
